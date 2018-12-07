@@ -1,0 +1,6 @@
+<app-user (sendRecord)="displaySelectedUser($event)"></app-user>
+<div *ngIf="selectedUser!==undefined">
+<h4>Selected User Details</h4>
+<h3>Name:{{selectedUser.name}}</h3>
+<h3>ID:{{selectedUser.id}}</h3>
+</div>

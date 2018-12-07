@@ -1,0 +1,13 @@
+<h2>User Component List</h2>
+<table>
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Display</th>
+</tr>
+<tr *ngFor="let user of userDetails">
+  <td>{{user.id}}</td>
+  <td>{{user.name}}</td>
+  <td><button (click)="SendDetails(user)">View</button></td>
+</tr>
+</table>
